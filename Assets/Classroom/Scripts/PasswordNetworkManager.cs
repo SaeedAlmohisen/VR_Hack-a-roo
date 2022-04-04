@@ -3,7 +3,7 @@ using Unity.Netcode;
 using TMPro;
 using System.Text;
 
-namespace DapperDino.UMT.ConnectionApproval
+namespace Classroom.ConnectionApproval
 {
     public class PasswordNetworkManager : MonoBehaviour
     {
