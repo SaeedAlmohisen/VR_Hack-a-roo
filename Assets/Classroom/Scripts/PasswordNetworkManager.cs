@@ -96,17 +96,15 @@ namespace Classroom.ConnectionApproval
 
             switch (NetworkManager.Singleton.ConnectedClients.Count)
             {
+                // For host login positioning
                 case 0:
-                    spawnPos = new Vector3(-2f, 0f, 0f);
-                    spawnRot = Quaternion.Euler(0f, 135f, 0f);
+                    spawnPos = new Vector3(-4.45900011f, 0.294f, -1.37699997f);
+                    spawnRot = Quaternion.Euler(0f, 270f, 0f);
                     break;
-                case 1:
-                    spawnPos = new Vector3(0f, 0f, 0f);
-                    spawnRot = Quaternion.Euler(0f, 180f, 0f);
-                    break;
-                case 2:
-                    spawnPos = new Vector3(2f, 0f, 0f);
-                    spawnRot = Quaternion.Euler(0f, 225, 0f);
+                // For client login
+                default:
+                    spawnPos = new Vector3(4.67999983f, 0.800000012f, 0.649999976f);
+                    spawnRot = Quaternion.Euler(0f, 330f, 0f);
                     break;
             }
 
