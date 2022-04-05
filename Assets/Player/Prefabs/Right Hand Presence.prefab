@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5791154828886631184}
-  m_LocalRotation: {x: 0.07539053, y: -0.069050446, z: 0.37742573, w: 0.92037934}
-  m_LocalPosition: {x: -0.0029353094, y: 1.0448048, z: 0.3238092}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &5791154828886631185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0e0b33cf699954a984939d03ddebf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handModelPrefab: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
+  controllerCharacteristics: 512
+  handModelPrefab: {fileID: 1899737163546256145, guid: a46cd6d4b7a12f446964314948b2085f, type: 3}
