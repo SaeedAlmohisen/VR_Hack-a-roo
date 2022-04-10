@@ -26,10 +26,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         RoomOptions roomOptions = new RoomOptions()
         {
             MaxPlayers = 10,
-            IsVisible = false,
+            IsVisible = true,
             IsOpen = true
         };
-        PhotonNetwork.JoinOrCreateRoom("Room 1",roomOptions, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom("Classroom",roomOptions, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom()
