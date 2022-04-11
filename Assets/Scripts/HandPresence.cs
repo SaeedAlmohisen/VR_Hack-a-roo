@@ -22,9 +22,9 @@ public class HandPresence : MonoBehaviour
 
     void TryInitialize()
     {
-        //List<InputDevice> devices = new List<InputDevice>();
-        //InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
-        //targetDevice = devices[0];
+        List<InputDevice> devices = new List<InputDevice>();
+        InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
+        targetDevice = devices[0];
 
         spawnedHandModel = Instantiate(handModelPrefab, transform);
         handAnimator = spawnedHandModel.GetComponent<Animator>();
@@ -69,7 +69,7 @@ public class HandPresence : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (!targetDevice.isValid)
+        if (!targetDevice.isValid)
         {
             TryInitialize();
         }
@@ -77,9 +77,7 @@ public class HandPresence : MonoBehaviour
         {
             spawnedHandModel.SetActive(true);
             UpdateHandAnimation();
-        }*/
-        spawnedHandModel.SetActive(true);
-        UpdateHandAnimation();
+        }
 
     }
 }
