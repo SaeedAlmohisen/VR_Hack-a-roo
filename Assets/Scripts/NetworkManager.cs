@@ -35,6 +35,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         };
         PhotonNetwork.CreateRoom("Classroom", roomOptions);
         Debug.Log("Creating new room Classroom");
+        PhotonNetwork.JoinRoom("Classroom");
     }
 
     public override void OnJoinedRoom()
