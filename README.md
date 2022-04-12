@@ -9,4 +9,4 @@
 Virtually Limitless 
 
 ## Our Usecase: 
-Create an intactive classroom to help people around the world to learn, communicate, and have fun.
+Create an intactive classroom using VR to help people around the world to learn, communicate, and have fun.
