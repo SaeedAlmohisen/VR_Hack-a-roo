@@ -22,23 +22,19 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        Debug.Log("Connection successful.");
-        if (PhotonNetwork.IsConnected)
+        PhotonNetwork.JoinRoom("Classroom");
+        Debug.Log("Room Classroom joined");
+    }
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        RoomOptions roomOptions = new RoomOptions()
         {
-            PhotonNetwork.JoinRoom("Classroom");
-            Debug.Log("Room Classroom joined");
-        }
-        else
-        {
-            RoomOptions roomOptions = new RoomOptions()
-            {
-                MaxPlayers = 10,
-                IsVisible = true,
-                IsOpen = true
-            };
-            PhotonNetwork.JoinOrCreateRoom("Classroom", roomOptions, TypedLobby.Default);
-            Debug.Log("Creating new room Classroom");
-        }
+            MaxPlayers = 10,
+            IsVisible = true,
+            IsOpen = true
+        };
+        PhotonNetwork.CreateRoom("Classroom", roomOptions);
+        Debug.Log("Creating new room Classroom");
     }
 
     public override void OnJoinedRoom()
